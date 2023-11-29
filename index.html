@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Colocation Tâches Ménagères</title>
+</head>
+<body>
+
+    <header>
+        <h1>Tâches Ménagères pour la Colocation</h1>
+    </header>
+
+    <section id="tasks">
+        <h2>Liste des Tâches</h2>
+        <ul id="task-list">
+            <!-- Les tâches seront ajoutées dynamiquement ici -->
+        </ul>
+    </section>
+
+    <section id="assign-tasks">
+        <h2>Assigner les Tâches</h2>
+        <label for="task">Nouvelle Tâche:</label>
+        <input type="text" id="task" placeholder="Entrez une nouvelle tâche">
+        <label for="assignee">Assigner à:</label>
+        <select id="assignee">
+            <option value="person1">Larchi</option>
+            <option value="person2">Smog</option>
+            <option value="person3">Toto</option>
+        </select>
+        <button onclick="assignTask()">Assigner</button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
